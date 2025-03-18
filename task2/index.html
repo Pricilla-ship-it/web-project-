@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Reward System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+
+        <!-- Display User Points -->
+        <div class="profile">
+            <h2>Your Points: <span id="user-points">0</span></h2>
+        </div>
+
+        <!-- Points Transfer Section -->
+        <div class="transfer">
+            <h3>Transfer Points</h3>
+            <form id="transfer-form">
+                <input type="text" id="recipient-username" placeholder="Enter Username" required>
+                <input type="number" id="transfer-points" placeholder="Points to transfer" required min="1">
+                <button type="submit">Transfer Points</button>
+            </form>
+            <p id="transfer-status"></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Reward System</p>
+        </footer>
+    </div>
+</body>
+</html>
